@@ -1,0 +1,50 @@
+# ============================================================
+# PoroREV input file
+# Edit values after "=" and run:  python PoroREV.py
+# ============================================================
+
+# ------------------------------
+# 1) PHASE LABELS (required)
+# ------------------------------
+# Use the exact voxel values in your segmented image.
+# If image is not binary, code keeps voxels equal to "solid" as solid
+# and treats all other voxel values as pore.
+pore = 1
+solid = 0
+
+# ------------------------------
+# 2) INPUT FILE (required)
+# ------------------------------
+# Use absolute path or path relative to this input.txt location.
+filename = geopack.raw
+
+# ------------------------------
+# 3) RAW FILE SETTINGS
+# ------------------------------
+# These are used only when filename is .raw
+filesize_x = 750
+filesize_y = 750
+filesize_z = 750
+dtype = uint8
+
+# ------------------------------
+# 4) REV SAMPLING SETTINGS
+# ------------------------------
+min_side = 10
+step = 10
+samples = 10
+seed = 42
+
+# ------------------------------
+# 5) OUTPUT FILES
+# ------------------------------
+save_fig = porosity_rev.pdf
+#common formats: .png, .pdf
+save_csv = porosity_rev.csv
+
+# ------------------------------
+# 6) OPTIONAL REV DETECTION BY CI
+# ------------------------------
+# Uncomment next line to enable automatic REV-size detection:
+# rev_ci_threshold = 0.005
+rev_consecutive = 3
