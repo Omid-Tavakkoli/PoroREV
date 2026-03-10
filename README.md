@@ -69,8 +69,7 @@ Important behavior:
 - `filesize_x`, `filesize_y`, `filesize_z`: raw dimensions in voxels
 - `dtype`: raw voxel type (examples: `uint8`, `uint16`, `int16`, `float32`)
 
-Notes:
-- For `.tif/.tiff`, dimensions are read from the image stack.
+Note:
 - For `.tif/.tiff`, raw size fields and `dtype` are ignored.
 
 **4) REV sampling settings**
@@ -97,6 +96,7 @@ If `rev_ci_threshold` is commented out or missing, automatic REV-size detection 
 **1. Figure (`save_fig`)**:
    - Mean porosity vs. cube size
    - Shaded 95% confidence interval
+
 **2. CSV (`save_csv`) with columns**:
    - `cube_size_voxel`
    - `mean_porosity`
