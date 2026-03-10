@@ -41,7 +41,7 @@ conda install -c conda-forge numpy matplotlib seaborn tifffile imageio -y
 python3 PoroREV.py
 ```
 
--**Custom config file path**:
+- **Custom config file path**:
 
 ```bash
 python3 PoroREV.py --config input.txt
