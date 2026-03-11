@@ -1,6 +1,6 @@
 ## PoroREV
 
-This repository estimate porosity REV (Representative Elementary Volume) from a segmented 3D image using random cube sampling.
+This repository estimates porosity REV (Representative Elementary Volume) from a segmented 3D image using random cube sampling.
 
 The script supports:
 - `.raw` volumes (with dimensions from `input.txt`)
